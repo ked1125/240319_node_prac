@@ -18,11 +18,11 @@ const mongoose = require("mongoose");
 // mongoose 설치하면 pending?이 메시지로 출력됨..!
 // promise(pending) - 대기하다..? 기다리고 있음
 
-const dotenv = require("dotenv");
-// mongo url 패스워드값 감추기 위해 사용하는 환경
-
 const { User } = require("./model/User.js");
 // require은 외부 모듈 가져올때 사용합니당
+
+const dotenv = require("dotenv");
+// mongo url 패스워드값 감추기 위해 사용하는 환경
 
 // const users = [];
 
@@ -45,7 +45,7 @@ dotenv.config();
 // fn()
 // async는 성공만 하기 때문에 try~catch문으로 잡아줘야함!
 
-const fn = new Promise(function (resolve, reject) {});
+// const fn = new Promise(function (resolve, reject) {});
 
 const server = async function () {
   // ㄱ. async를 만나면 promise가 실행이 되고 (resolve, 실행값만이 나온다?)
